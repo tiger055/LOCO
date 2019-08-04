@@ -143,13 +143,13 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="TRIVIA", description="**Web Searching** :spy:")
+        self.embed=discord.Embed(title="**__TRIVIA CHALLENGERS__**", description="**Web Searching** :spy:")
         self.embed.set_author(name ='',url=' ',icon_url='https://images-ext-2.discordapp.net/external/aMZ8_Dhu3Cib5U1l--xzP6QVgEV6bzjPDLMC-gNawWY/https/cdn.discordapp.com/attachments/577373201164795904/585046581506605076/ezgif-2-2f5a82b8174f.gif?width=225&height=225')
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
-        self.embed.add_field(name="Option I", value="0", inline=False)
-        self.embed.add_field(name="Option II", value="0", inline=False)
-        self.embed.add_field(name="Option III", value="0", inline=False)
-        self.embed.set_footer(text=f"Trivia", \
+        self.embed.add_field(name="**__ANSWER 1__**", value="0", inline=False)
+        self.embed.add_field(name="**__ANSWER 2__**", value="0", inline=False)
+        self.embed.add_field(name="**__ANSWER 3__**", value="0", inline=False)
+        self.embed.set_footer(text=f"CAPTAIN COOL#0044", \
             icon_url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
@@ -209,9 +209,9 @@ class Bot(discord.Client):
             #if answer == 3:
                 #three_cross = ":x:"            
  
-        self.embed.set_field_at(0, name="Option I", value="**{0}**{1}".format(lst_scores[0], one_check))
-        self.embed.set_field_at(1, name="Option II", value="**{0}**{1}".format(lst_scores[1], two_check))
-        self.embed.set_field_at(2, name="Option III", value="**{0}**{1}".format(lst_scores[2], three_check))
+        self.embed.set_field_at(0, name="**__ANSWER 1__**", value="**{0}**{1}".format(lst_scores[0], one_check))
+        self.embed.set_field_at(1, name="**__ANSWER 2__**", value="**{0}**{1}".format(lst_scores[1], two_check))
+        self.embed.set_field_at(2, name="**__ANSWER 3__**", value="**{0}**{1}".format(lst_scores[2], three_check))
         self.embed.set_field_at(3, name="Suggested Answer!:", value=best_answer, inline=True)
 
 
@@ -228,7 +228,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Game(name='Trivia by CAPTAIN COOL||*help'))
+        await self.change_presence(activity=discord.Game(name='With CAPTAIN COOL||*help'))
 
     async def on_message(self, message):
 
@@ -283,7 +283,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NjA0OTkxNjg0NzUyOTY1NjYy.XUbrJg.1d37Gc9rUYT9GKSYSTCbFMPsVds'))
+    loop.create_task(bot.start('NjA3NTgzNjY1NzgxODY2NDk2.XUbvKw.FecIbuf1F6g7YpGvAsA_2eXQunA'))
     loop.run_forever()
 
 
