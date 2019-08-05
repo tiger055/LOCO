@@ -40,6 +40,10 @@ oot_channel_id_list = [
 	"591600008353021953",#hq pride
 	"591600106818633729",#swagiq pride
 	"591600140608077844",#the q pride
+	"598669844983840779",#cash quiz dimension
+	"501220538518077440",#the q dimension
+	"501220306128601098",#swagiq dimension
+	"459842150323060736",#hq dimension
 ]
 
 
@@ -260,7 +264,7 @@ class Bot(discord.Client):
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
-           embed.add_field(name="Support Game", value="**Loco\nSwag-iq\nConfett-India\nHQ Trivia\nThe Q\nMORE COMMING SOON...**", inline=False)
+           embed.add_field(name="Support Game", value="**Loco\nSwag-iq\nConfett-India\nHQ Trivia\nThe Q\nCashQuiz\n\nMORE COMMING SOON...**", inline=False)
            embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game**", inline=False)
            await message.channel.send(embed=embed)
           
