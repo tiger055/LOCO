@@ -71,11 +71,6 @@ async def update_scores(content, answer_scores):
         else: # 1? ...
             answer_scores[ind] += markscore
 	
-        else: # W1 ...
-            answer_scores[ind] += markscore
-	else: # w1 ...
-            answer_scores[ind] += markscore
-	
     else: # contains not or n
         if m[3] is None:
             answer_scores[ind] -= nomarkscore
