@@ -26,7 +26,7 @@ oot_channel_id_list = [
 	"590228259937976321",#bb pp indian trivia offfical
 	"586476852999225355",# google trivia bb pp
 	"591068955523809328",#hq galaxy
-	"593070663548403743",# jeetoh IQ
+	"446448458090545172",# the q tribe
 	"513818250652680213",#HQ trivia world
         "569420128794443776",#united trivia nation LOCO
         "588070986554015764",#unitef trivia nation CI
@@ -34,6 +34,12 @@ oot_channel_id_list = [
         "593990608914219008",#loco
         "595635734904307742",#loco
         "601814968710594627",#loco
+	"446448437119025154",#swag IQ tribe
+	"513818839008673833",#the q trivia world
+	"535675285211971584",#swagiq world
+	"591600008353021953",#hq pride
+	"591600106818633729",#swagiq pride
+	"591600140608077844",#the q pride
 ]
 
 
@@ -64,7 +70,14 @@ async def update_scores(content, answer_scores):
 
         else: # 1? ...
             answer_scores[ind] += markscore
-
+	else: # ?1 ...
+            answer_scores[ind] += markscore
+	
+        else: # W1 ...
+            answer_scores[ind] += markscore
+	else: # w1 ...
+            answer_scores[ind] += markscore
+	
     else: # contains not or n
         if m[3] is None:
             answer_scores[ind] -= nomarkscore
@@ -254,8 +267,8 @@ class Bot(discord.Client):
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
-           embed.add_field(name="Support Game", value="**Loco\nSwag-iq\nConfett-India\nHQ Trivia\nJeetoh\nMy Karma**", inline=False)
-           embed.add_field(name="when Question come put command", value=" *  is command work for all support game**", inline=False)
+           embed.add_field(name="Support Game", value="**Loco\nSwag-iq\nConfett-India\nHQ Trivia\nThe Q\nMORE COMMING SOON...**", inline=False)
+           embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game**", inline=False)
            await message.channel.send(embed=embed)
           
 
