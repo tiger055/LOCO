@@ -154,14 +154,14 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="**__T1TRIVAA 2.0__**", description="**Web Searching** :spy:")
-        self.embed.set_author(name ='',url=' ',icon_url='https://cdn.discordapp.com/attachments/565103515618246657/607954777401458689/JPEG_20190805_170520.jpg')
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/565103515618246657/607954777401458689/JPEG_20190805_170520.jpg")
+        self.embed=discord.Embed(title="**__TRIVIA SAVAGE | PRO__**", description="**Web Searching** :spy:")
+        self.embed.set_author(name ='',url=' ',icon_url='https://cdn.discordapp.com/avatars/572991853280886784/559f533c89850c71ff5ea8a4043e720b.png?size=256')
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/572991853280886784/559f533c89850c71ff5ea8a4043e720b.png?size=256")
         self.embed.add_field(name="**__ANSWER 1__**", value="0", inline=False)
         self.embed.add_field(name="**__ANSWER 2__**", value="0", inline=False)
         self.embed.add_field(name="**__ANSWER 3__**", value="0", inline=False)
         self.embed.set_footer(text=f"CAPTAIN COOL#0044", \
-            icon_url="https://cdn.discordapp.com/attachments/565103515618246657/607954777401458689/JPEG_20190805_170520.jpg")
+            icon_url="https://cdn.discordapp.com/avatars/553256923340865567/09c5c653506e83cda8870b4cc373593f.png?size=256")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -239,7 +239,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Game(name='With CAPTAIN COOL||*help'))
+        await self.change_presence(activity=discord.Game(name='With CAPTAIN COOL||+help'))
 
     async def on_message(self, message):
 
@@ -247,7 +247,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "*":
+        if message.content.lower() == "+":
             await message.delete()
             if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
@@ -261,7 +261,7 @@ class Bot(discord.Client):
                 await message.channel.send("**Lol** You Not Have permission To Use This **cmd!** :stuck_out_tongue_winking_eye:")
             return
 
-        if message.content.startswith('*help'):
+        if message.content.startswith('+help'):
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
