@@ -47,11 +47,12 @@ oot_channel_id_list = [
 ]
 
 
-answer_pattern = re.compile(r'(not|n)?([1-3]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
+answer_pattern = re.compile(r'(not|n)?([1-3]{1})(\?)?(cnf)?(\?)?(w)?(W)?(c)?$', re.IGNORECASE)
 
 apgscore = 500
 nomarkscore = 300
 markscore = 200
+wmarkscore = 150
 
 async def update_scores(content, answer_scores):
     global answer_pattern
@@ -71,6 +72,8 @@ async def update_scores(content, answer_scores):
                     answer_scores[ind] += apgscore
                 else:
                     answer_scores[ind] += markscore
+		else: # w
+                    answer_scores[ind] += wmarkscore
 
         else: # 1? ...
             answer_scores[ind] += markscore
@@ -293,7 +296,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NjA3NTgzNjY1NzgxODY2NDk2.XUbvKw.FecIbuf1F6g7YpGvAsA_2eXQunA'))
+    loop.create_task(bot.start('NjA1MDI4NjA2NjM2MzI2OTEy.XUl5hg.qmGSYK5zGD7PSRy1esolw3J6hgk'))
     loop.run_forever()
 
 
