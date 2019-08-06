@@ -69,7 +69,7 @@ async def update_scores(content, answer_scores):
                 answer_scores[ind] += nomarkscore
             else: # apg
                 if m[5] is None:
-                    answer_scores[ind] += apgscore
+                    answer_scores[ind] += wmarkscroe
                 else:
                     answer_scores[ind] += markscore
 
