@@ -128,9 +128,6 @@ class SelfBot(discord.Client):
                         else:
                             self.answer_scores[ind] += markscore
 			
-			else: # w ...
-                    answer_scores[ind] += wmarkscore
-
                 else: # 1? ...
                     self.answer_scores[ind] += markscore
 
