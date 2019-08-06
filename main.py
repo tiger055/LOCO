@@ -153,14 +153,14 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="**__TRIVIA CHALLENGERS__**", description="**Web Searching** :spy:")
-        self.embed.set_author(name ='',url=' ',icon_url='https://images-ext-2.discordapp.net/external/aMZ8_Dhu3Cib5U1l--xzP6QVgEV6bzjPDLMC-gNawWY/https/cdn.discordapp.com/attachments/577373201164795904/585046581506605076/ezgif-2-2f5a82b8174f.gif?width=225&height=225')
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
+        self.embed=discord.Embed(title="**__T1TRIVAA 2.0__**", description="**Web Searching** :spy:")
+        self.embed.set_author(name ='',url=' ',icon_url='https://cdn.discordapp.com/attachments/565103515618246657/607954777401458689/JPEG_20190805_170520.jpg')
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/565103515618246657/607954777401458689/JPEG_20190805_170520.jpg")
         self.embed.add_field(name="**__ANSWER 1__**", value="0", inline=False)
         self.embed.add_field(name="**__ANSWER 2__**", value="0", inline=False)
         self.embed.add_field(name="**__ANSWER 3__**", value="0", inline=False)
         self.embed.set_footer(text=f"CAPTAIN COOL#0044", \
-            icon_url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
+            icon_url="https://cdn.discordapp.com/attachments/565103515618246657/607954777401458689/JPEG_20190805_170520.jpg")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
         #await self.bot.add_reaction(embed,':spy:')
