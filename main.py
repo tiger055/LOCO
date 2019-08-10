@@ -16,21 +16,22 @@ BOT_OWNER_ROLE = 'fetch' # change to what you need
 
  
 oot_channel_id_list = [
-    "602382892370362369", #loco galaxy
-	"601814968710594627", #loco IQ
-    "595640668924280848", #galaxy Indian confetti
-    "590583414541910018", #IQ Indian c
-	"446448437119025154", #swag iq
-	"586461741953712128",# google trivia bb
-	"569420128794443776", #bb  unt 
-	"590228259937976321",#bb pp indian trivia offfical
-	"586476852999225355",# google trivia bb pp
-	"591068955523809328",#hq galaxy
-	"593070663548403743",# jeetoh IQ
-	"513818250652680213",#HQ trivia world
-        "569420128794443776",#united trivia nation LOCO
-        "588070986554015764",#unitef trivia nation CI
-        "580198028950896640",#trivia tribe hq
+    "593990608914219008", #loco galaxy
+	"607613349491900436", #loco IQ
+    "569420128794443776", #loco unt
+    "569502072945377290", #indian loco
+	"593990638916075520", #galaxy confetti
+	"609405523070287893", #kingdom loco
+	"590583414541910018",# confetti IQ
+	"591294134564683809", #indian confetti
+	"588070986554015764",#unt confetti
+	"609405529575653387",# kingdom confetti
+	"608306164899250181",#flipkart IQ
+	"608183077734318081",# flipkart galaxy
+	"580198028950896640",#HQ tribe
+        "459842150323060736",#hq dimensions
+        "513818250652680213",#hq world
+        "569420198717816852",#hq unt
         "593990608914219008",#loco
         "595635734904307742",#loco
         "601814968710594627",#loco
@@ -143,13 +144,13 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="TRIVIA", description="**Web Searching** :spy:")
+        self.embed=discord.Embed(title="**__ANSWER TRIVIA", description="**Web Searching** :spy:")
         self.embed.set_author(name ='',url=' ',icon_url='https://images-ext-2.discordapp.net/external/aMZ8_Dhu3Cib5U1l--xzP6QVgEV6bzjPDLMC-gNawWY/https/cdn.discordapp.com/attachments/577373201164795904/585046581506605076/ezgif-2-2f5a82b8174f.gif?width=225&height=225')
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
         self.embed.add_field(name="Option I", value="0", inline=False)
         self.embed.add_field(name="Option II", value="0", inline=False)
         self.embed.add_field(name="Option III", value="0", inline=False)
-        self.embed.set_footer(text=f"Trivia", \
+        self.embed.set_footer(text=f"CAPTAIN COOL#0044", \
             icon_url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
