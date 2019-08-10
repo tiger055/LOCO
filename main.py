@@ -227,8 +227,8 @@ class Bot(discord.Client):
 
         await self.clear_results()
         await self.update_embeds()
-        #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Game(name='Trivia games with Mike||*help'))
+        await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
+        await self.change_presence(activity=discord.Game(name='Trivia with Captain Cool||*help'))
 
     async def on_message(self, message):
 
@@ -254,7 +254,7 @@ class Bot(discord.Client):
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
-           embed.add_field(name="Support Game", value="**Loco\nSwag-iq\nConfett-India\nHQ Trivia\nJeetoh\nMy Karma**", inline=False)
+           embed.add_field(name="Support Game", value="**Loco\nSwag-iq\nConfett-India\nHQ Trivia\nCashquiz\nConfetti Vietnam**", inline=False)
            embed.add_field(name="when Question come put command", value=" *  is command work for all support game**", inline=False)
            await message.channel.send(embed=embed)
           
@@ -283,7 +283,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NjA0ODk2MDUyNDYxNDM2OTI4.XT1BQw.U-E1U1zGZaMl26IrM_LDU4ezg2w'))
+    loop.create_task(bot.start('NjA5NzMxNjAxMzkxMTU3MjYx.XU6_Aw.GT9O3odb0i5uNYcr8tu7-nIxfTE'))
     loop.run_forever()
 
 
@@ -292,7 +292,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NDcyNjcwMjA5MDQwMzE4NDY0.XUFeQQ.l_Qvvzd3Jq5lnwDTPRfAM7xt_ZY',
+    loop.create_task(selfbot.start('NTUzMjU2OTIzMzQwODY1NTY3.XU6BbQ.JpPoEYhmA6I4xuyG8Fo9SNyq9wo',
                                    bot=False))
     loop.run_forever()
 
