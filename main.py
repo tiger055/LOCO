@@ -268,7 +268,7 @@ class Bot(discord.Client):
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
            embed.add_field(name="Support Game", value="**Loco\nConfett-India\nFlipkart\nJeetoh\nHQ Trivia\nCashquiz\nSwag IQ\nThe Q\nConfetti Vietnam**", inline=False)
-           embed.add_field(name="when Question come put command", value=" *  is command work for all support game**", inline=False)
+           embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game**", inline=False)
            await message.channel.send(embed=embed)
           
 
