@@ -28,15 +28,57 @@ oot_channel_id_list = [
 	"609405529575653387",# kingdom confetti
 	"608306164899250181",#flipkart IQ
 	"608183077734318081",# flipkart galaxy
+	"609674812562079744",#flipkart kingdom
 	"580198028950896640",#HQ tribe
         "459842150323060736",#hq dimensions
         "513818250652680213",#hq world
         "569420198717816852",#hq unt
-        "593990608914219008",#loco
+	"549970576295329794",#hq
+	"476478449679073280",#hq
+	"459453560757682177",#hq
+	"456777326944845824",#hq
+	"455376046880194560",#hq
+	"475790039578574858",#hq
+	"473934915990192138",#hq
+	"456017222461161493",#hq
+        "483833245109321748",#hq
+	"440184468213596171",#hq
+	"459842150323060736",#hq
+	"495016500999225354",#hq
+	"453228023240458250",#hq
+	"464767606570876928",#hq
+	"440663723770773506",#hq
+	"461292938803019777",#hq
+	"446444693065039882",#hq
+	"462834951419723776",#hq
+	"457245542456754188",#hq
+	"447599145746956300",#hq
+	"536602928467935232",#hq
+	"523359669280833536",#hq
+	"536314270171004940",#hq
+	"535628205139296256",#hq
         "595635734904307742",#loco
         "601814968710594627",#loco
 	"598669844983840779",#cashquiz dimension
 	"446448458090545172",#cashquiz tribe
+	"554706451743113228",#cs
+	"476478527559172096",#cs
+	"459453560757682177",#cs
+	"462952838151274506",#cs
+	"473936154148995072",#cs
+	"456016990117822466",#cs
+	"483833271566860298",#cs
+	"477996526631780357",#cs
+	"477538757890015252",#cs
+	"495020431460401162",#cs
+	"453228069675597824",#cs
+	"461063135701499904",#cs
+	"448564554746691623",#cs
+	"450114422053011461",#cs
+	"463069410261991426",#cs
+	"446444804663148545",#cs
+	"462834975264473128",#cs
+	"457269145025773578",#cs
 	"501220538518077440",#theq dimensions
 	"446448458090545172",#theq tribe
 	"513818839008673833",#theq world
@@ -44,9 +86,29 @@ oot_channel_id_list = [
 	"535675285211971584",#swagIQ world
 	"446448437119025154",#swagIQ tribe
 	"501220306128601098",#swagIQ dimension
+	"554706451743113228",#siq
+	"476858437284921344",#siq
+	"473936251334950913",#siq
+	"501220306128601098",#siq
+	"453228108020056065",#siq
+	"450114438435962880",#siq
+	"462146193913413632",#siq
+	"446448437119025154",#siq
+	"457251758939308032",#siq
 	"514915010955313153",#confeti vietnam world
 	"501219307477532674",#confeti vietnam dimension
 	"571241319658291200",#confeti vietnam unt
+	"554706451743113228",#joyride
+	"476478563889971220",#joyride
+	"462953111162454026",#joyride
+	"473936290908340275",#joyride
+	"501219719995457556",#joyride
+	"453228140282511381",#joyride
+	"448564572597518346",#jr
+	"463330619301167104",#jr
+	"463069628231450634",#jr
+	"446448343464411136",#jr
+	"471555943792902145",#jr
 ]
 
 
@@ -267,8 +329,9 @@ class Bot(discord.Client):
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
-           embed.add_field(name="Support Game", value="**Loco\nConfett-India\nFlipkart\nJeetoh\nHQ Trivia\nCashquiz\nSwag IQ\nThe Q\nConfetti Vietnam**", inline=False)
+           embed.add_field(name="Support Game", value="**Loco\nConfetti-India\nFlipkart\nJeetoh\nHQ Trivia\nCashquiz\nSwag IQ\nThe Q\nJoyride\nConfetti Vietnam**", inline=False)
            embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game**", inline=False)
+	   embed.add_field(name="For More Info", value="**Contact to `Server Owner` Or `Main Developer`{CAPTAIN COOL#0044}**", inline=False)
            await message.channel.send(embed=embed)
           
 
