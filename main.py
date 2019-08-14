@@ -293,43 +293,18 @@ class Bot(discord.Client):
         if self.embed_msg is not None:
             await self.embed_msg.edit(embed=self.embed)
 
-    
-@bot.event
-async def on_ready():
-    print('Online')
-    print(bot.user.name)
-    print("Everything's all ready to go~")
-    while True:
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with TRIVIA SAVAGE | PRO"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with Loco!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with Brainbaazi!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with Confetti India!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with HQ!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with The Q!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with My Karma!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=1,name="with Jeetoh!"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=2,name="with CAPTAIN COOL"))
-    	await asyncio.sleep(5)
-    	
-    	await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'''{len(bot.guilds)} servers'''))
-    	await asyncio.sleep(5)
-        
+    async def on_ready(self):
+        print("==============")
+        print("Nelson Trivia")
+        print("Connected to discord.")
+        print("User: " + self.user.name)
+        print("ID: " + str(self.user.id))
+
+        await self.clear_results()
+        await self.update_embeds()
+        await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
+        await self.change_presence(activity=discord.Game(name='Trivia with Captain Cool||*help'))
+
     async def on_message(self, message):
 
         # if message is private
