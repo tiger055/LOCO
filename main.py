@@ -51,6 +51,7 @@ oot_channel_id_list = [
 	"514915010955313153",#confeti vietnam world
 	"501219307477532674",#confeti vietnam dimension
 	"571241319658291200",#confeti vietnam unt
+	"611751492054941696",#confetti mexico
 	"554706451743113228",#joyride
 	"476478563889971220",#joyride
 	"462953111162454026",#joyride
