@@ -20,49 +20,40 @@ oot_channel_id_list = [
 	"607613349491900436", #loco IQ
     "569420128794443776", #loco unt
     "569502072945377290", #indian loco
-	"593990638916075520", #galaxy confetti
-	"609405523070287893", #kingdom loco
+	"595635734904307742", #tf loco
+	"605443517069656084", #tf confetti
+	"593990638916075520", #galaxy confett
 	"590583414541910018",# confetti IQ
 	"591294134564683809", #indian confetti
 	"588070986554015764",#unt confetti
 	"609405529575653387",# kingdom confetti
-	"608306164899250181",#flipkart IQ
-	"608183077734318081",# flipkart galaxy
-	"609674812562079744",#flipkart kingdom
+	"595639586726740049",#tf hq
+	"591068955523809328",#hq galaxy
 	"580198028950896640",#HQ tribe
         "459842150323060736",#hq dimensions
         "513818250652680213",#hq world
         "569420198717816852",#hq unt
 	"568617830258442255"#hq revolution
-        "595635734904307742",#loco
-        "601814968710594627",#loco
 	"598669844983840779",#cashquiz dimension
 	"446448458090545172",#cashquiz tribe
-	"570782751733841931",#confetti mex. revolution
+	"610713322509303809",#cashquiz galaxy
+	"595639664300392472",#cashquiz tf
+	"596527077402869770",#theq tf
 	"501220538518077440",#theq dimensions
 	"446448458090545172",#theq tribe
 	"513818839008673833",#theq world
 	"569420278006808586",#theq unt
 	"580208596139245601",#theq revolution
 	"535675285211971584",#swagIQ world
+	"595639769904447502",#swagIQ tf
 	"446448437119025154",#swagIQ tribe
 	"501220306128601098",#swagIQ dimension
 	"570794448808837131",#swagIQ revolution
 	"514915010955313153",#confeti vietnam world
+	"595640787933331466",#confetti vietnam tf
 	"501219307477532674",#confeti vietnam dimension
 	"571241319658291200",#confeti vietnam unt
 	"611751492054941696",#confetti mexico
-	"554706451743113228",#joyride
-	"476478563889971220",#joyride
-	"462953111162454026",#joyride
-	"473936290908340275",#joyride
-	"501219719995457556",#joyride
-	"453228140282511381",#joyride
-	"448564572597518346",#jr
-	"463330619301167104",#jr
-	"463069628231450634",#jr
-	"446448343464411136",#jr
-	"471555943792902145",#jr
 ]
 
 
@@ -283,8 +274,8 @@ class Bot(discord.Client):
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
-           embed.add_field(name="Support Game", value="**Loco\nConfetti-India\nFlipkart\nJeetoh\nHQ Trivia\nCashquiz\nSwag IQ\nThe Q\nJoyride\nConfetti Vietnam**", inline=False)
-           embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game**\n\n**FOR MORE INFO CONTACT TO DEVELOPER**", inline=False)
+           embed.add_field(name="Support Game", value="**Loco\nConfetti-India\nFlipkart\nJeetoh\nHQ Trivia\nCashquiz\nSwag IQ\nThe Q\nJoyride\nConfetti Vietnam\nConfetti mexico**", inline=False)
+           embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game**\n**`*j` is command of jeetoh**\n**`*f` is command for filpkart**\n**use bots in particular channels\n\n**FOR MORE INFO CONTACT TO DEVELOPER**", inline=False)
            await message.channel.send(embed=embed)
           
 
