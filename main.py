@@ -21,12 +21,14 @@ oot_channel_id_list = [
     "569420128794443776", #loco unt
     "569502072945377290", #indian loco
 	"595635734904307742", #tf loco
+	"612177236107460618",#sani loco
 	"605443517069656084", #tf confetti
 	"593990638916075520", #galaxy confett
 	"590583414541910018",# confetti IQ
 	"591294134564683809", #indian confetti
 	"588070986554015764",#unt confetti
 	"609405529575653387",# kingdom confetti
+	"612177284471717894",#sani confetti
 	"595639586726740049",#tf hq
 	"591068955523809328",#hq galaxy
 	"580198028950896640",#HQ tribe
@@ -169,7 +171,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="Option I", value="0", inline=False)
         self.embed.add_field(name="Option II", value="0", inline=False)
         self.embed.add_field(name="Option III", value="0", inline=False)
-        self.embed.set_footer(text=f"CAPTAIN COOL#0044", \
+        self.embed.set_footer(text=f"CAPTAIN COOL#0044")
             icon_url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
