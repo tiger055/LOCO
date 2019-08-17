@@ -55,6 +55,9 @@ oot_channel_id_list = [
 	"595640787933331466",#confetti vietnam tf
 	"501219307477532674",#confeti vietnam dimension
 	"571241319658291200",#confeti vietnam unt
+	"609003338675126272",#confetti vietnam pride
+	"611439844996153375",#confetti mexico pride
+	"611980037243273220",#confettimexico pride
 	"611751492054941696",#confetti mexico
 ]
 
