@@ -171,7 +171,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="Option I", value="0", inline=False)
         self.embed.add_field(name="Option II", value="0", inline=False)
         self.embed.add_field(name="Option III", value="0", inline=False)
-        self.embed.set_footer(text=f"CAPTAIN COOL#0044", /
+        self.embed.set_footer(text=f"CAPTAIN COOL#0044")
             icon_url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
