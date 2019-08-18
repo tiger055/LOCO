@@ -22,6 +22,7 @@ oot_channel_id_list = [
     "569502072945377290", #indian loco
 	"595635734904307742", #tf loco
 	"612177236107460618",#sani loco
+	"591498350562377741",#planet loco
 	"605443517069656084", #tf confetti
 	"593990638916075520", #galaxy confett
 	"590583414541910018",# confetti IQ
@@ -29,6 +30,7 @@ oot_channel_id_list = [
 	"588070986554015764",#unt confetti
 	"609405529575653387",# kingdom confetti
 	"612177284471717894",#sani confetti
+	"591498756562878475",#planet confetti
 	"595639586726740049",#tf hq
 	"591068955523809328",#hq galaxy
 	"580198028950896640",#HQ tribe
