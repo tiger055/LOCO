@@ -10,7 +10,9 @@ import threading
 import concurrent
 
 BOT_OWNER_ROLE = 'tiger' # change to what you need
-#BOT_OWNER_ROLE_ID = "597332392637890571"
+BOT_OWNER_ROLE_ID = "579907451319615499"
+bot_token = "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.AG-WOP5-6a9qGiFHgkaQ6S3WzyQ"
+self_token = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
   
  
 
@@ -61,6 +63,7 @@ oot_channel_id_list = [
 	"611439844996153375",#confetti mexico pride
 	"611980037243273220",#confettimexico pride
 	"611751492054941696",#confetti mexico
+	"610439542465626113"
 ]
 
 
