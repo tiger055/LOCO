@@ -16,14 +16,7 @@ BOT_OWNER_ROLE_ID = "579907451319615499"
  
 
  
-oot_channel_id_list = [
-   
-	"609003338675126272",#confetti vietnam pride
-	"611439844996153375",#confetti mexico pride
-	"611980037243273220",#confettimexico pride
-	"611751492054941696",#confetti mexico
-	"610439542465626113"
-]
+oot_channel_id_list = ["778998441270706186"]
 
 
 answer_pattern = re.compile(r'(not|n)?([1-3]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
