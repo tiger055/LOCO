@@ -11,54 +11,14 @@ import concurrent
 
 BOT_OWNER_ROLE = 'tiger' # change to what you need
 BOT_OWNER_ROLE_ID = "579907451319615499"
-bot_token_here =  "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.7cwLq6i6-Byt8yReJY9ERgMOKHo"
-self_token_here = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
+bot_token =  "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.7cwLq6i6-Byt8yReJY9ERgMOKHo"
+self_token = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
   
  
 
  
 oot_channel_id_list = [
-    "593990608914219008", #loco galaxy
-	"607613349491900436", #loco IQ
-    "569420128794443776", #loco unt
-    "569502072945377290", #indian loco
-	"595635734904307742", #tf loco
-	"612177236107460618",#sani loco
-	"591498350562377741",#planet loco
-	"605443517069656084", #tf confetti
-	"593990638916075520", #galaxy confett
-	"590583414541910018",# confetti IQ
-	"591294134564683809", #indian confetti
-	"588070986554015764",#unt confetti
-	"609405529575653387",# kingdom confetti
-	"612177284471717894",#sani confetti
-	"591498756562878475",#planet confetti
-	"595639586726740049",#tf hq
-	"591068955523809328",#hq galaxy
-	"580198028950896640",#HQ tribe
-        "459842150323060736",#hq dimensions
-        "513818250652680213",#hq world
-        "569420198717816852",#hq unt
-	"568617830258442255"#hq revolution
-	"598669844983840779",#cashquiz dimension
-	"446448458090545172",#cashquiz tribe
-	"610713322509303809",#cashquiz galaxy
-	"595639664300392472",#cashquiz tf
-	"596527077402869770",#theq tf
-	"501220538518077440",#theq dimensions
-	"446448458090545172",#theq tribe
-	"513818839008673833",#theq world
-	"569420278006808586",#theq unt
-	"580208596139245601",#theq revolution
-	"535675285211971584",#swagIQ world
-	"595639769904447502",#swagIQ tf
-	"446448437119025154",#swagIQ tribe
-	"501220306128601098",#swagIQ dimension
-	"570794448808837131",#swagIQ revolution
-	"514915010955313153",#confeti vietnam world
-	"595640787933331466",#confetti vietnam tf
-	"501219307477532674",#confeti vietnam dimension
-	"571241319658291200",#confeti vietnam unt
+   
 	"609003338675126272",#confetti vietnam pride
 	"611439844996153375",#confetti mexico pride
 	"611980037243273220",#confettimexico pride
