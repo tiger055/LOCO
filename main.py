@@ -11,8 +11,7 @@ import concurrent
 
 BOT_OWNER_ROLE = 'tiger' # change to what you need
 BOT_OWNER_ROLE_ID = "579907451319615499"
-bot_token =  "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.7cwLq6i6-Byt8yReJY9ERgMOKHo"
-self_token = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
+
   
  
 
@@ -273,7 +272,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('bot_token_here'))
+    loop.create_task(bot.start('Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.7cwLq6i6-Byt8yReJY9ERgMOKHo'))
     loop.run_forever()
 
 
@@ -282,7 +281,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('self_token_here',
+    loop.create_task(selfbot.start('NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0',
                                    bot=False))
     loop.run_forever()
 
