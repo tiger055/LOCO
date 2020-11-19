@@ -11,8 +11,8 @@ import concurrent
 
 BOT_OWNER_ROLE = 'tiger' # change to what you need
 BOT_OWNER_ROLE_ID = "579907451319615499"
-bot_token = "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.AG-WOP5-6a9qGiFHgkaQ6S3WzyQ"
-self_token = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
+bot_token_here = "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.AG-WOP5-6a9qGiFHgkaQ6S3WzyQ"
+self_token_here = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
   
  
 
