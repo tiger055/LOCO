@@ -93,8 +93,8 @@ class HTTPClient:
         self._locks = weakref.WeakValueDictionary()
         self._global_over = asyncio.Event(loop=self.loop)
         self._global_over.set()
-        self.token = NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0
-        self.bot_token = Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.7cwLq6i6-Byt8yReJY9ERgMOKHo
+        self.token = "NTc5OTA3NDUxMzE5NjE1NDk5.XsDOfw.2SJ0N4yc403WyG5OM5h9sP6heh0"
+        self.bot_token = "Nzc4OTQ2NjA2MTI0NDk4OTg0.X7ZYjw.7cwLq6i6-Byt8yReJY9ERgMOKHo"
         self.proxy = proxy
         self.proxy_auth = proxy_auth
 
