@@ -9,7 +9,7 @@ import multiprocessing
 import threading
 import concurrent
 
-BOT_OWNER_ROLE = 'fetch' # change to what you need
+BOT_OWNER_ROLE = 'tiger' # change to what you need
 #BOT_OWNER_ROLE_ID = "597332392637890571"
   
  
