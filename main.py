@@ -18,7 +18,7 @@ BOT_OWNER_ROLE_ID = "579907451319615499"
 
  
 oot_channel_id_list = [
-  "774480494812594187", #loco galaxy
+ 
 	"607613349491900436", #loco IQ
     "569420128794443776", #loco unt
     "569502072945377290", #indian loco
@@ -33,8 +33,7 @@ oot_channel_id_list = [
 	"609405529575653387",# kingdom confetti
 	"612177284471717894",#sani confetti
 	"591498756562878475",#planet confetti
-	"595639586726740049",#tf hq
-	"774480528631136287",#hq galaxy
+        "774480528631136287",#hq galaxy
 	"580198028950896640",#HQ tribe
         "459842150323060736",#hq dimensions
         "513818250652680213",#hq world
